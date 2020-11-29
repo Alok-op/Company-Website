@@ -1,0 +1,341 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: poppins;
+}
+ul, nav {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit;
+}
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+   align-items: center;
+   color: white;
+   padding: 35px 100px 0;
+}
+header h2 {
+    text-transform: uppercase;
+    font-family: pacifico;
+}
+header nav {
+    display: flex;
+}
+header nav li {
+    margin: 0 15px;
+}
+header nav li:first-child {
+    margin-left: 0;
+}
+header nav li:last-child {
+    margin-right: 0;
+}
+header .profile {
+    margin-right: 50px;
+}
+header .profile .header-btn {
+    margin-right: 25px;
+}
+.profile .header-btn {
+    padding: 10px 25px;
+    background-color: #0d63b8;
+    border-radius: 50px;
+    font-size: 16px;
+    border: none;
+    color: inherit;
+}
+.profile i {
+    font-size: 25px;
+    padding-right: 15px;
+}
+
+/*  banner area    */
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 110px 100px;
+}
+@media (max-width:1000px) {
+    section {
+        padding: 100px 50px;
+    }
+}
+@media (max-width:600px) {
+    section {
+        padding: 125px 30px;
+    }
+}
+section p {
+    max-width: 800px;
+    margin-bottom: 35px;
+    line-height: 2;
+}
+.banner-area {
+    position: relative;
+    justify-content: center;
+    min-height: 100vh;
+    color: #ffffff;
+    text-align: center;
+}
+.banner-area p {
+    font-family: pacifico;
+    font-size: 25px;
+}
+.banner-area .banner-img {
+    background-image: url('images/img4.jpg');
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    z-index: -1;
+}
+.banner-area .banner-img:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.banner-area h1 {
+    font-size: 65px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.banner-area h5 {
+    font-size: 20px;
+    text-transform: capitalize;
+}
+.banner-area .banner-txt {
+   margin-bottom: 15px;
+   font-size: 18px;
+   line-height: 1;
+}
+.banner-area a.banner-btn {
+    padding: 15px 35px;
+    background-color:  #2eb5be;
+    font-size: 20px;
+    border-radius: 50px;
+    text-transform: capitalize;
+}
+
+/*  course area    */
+
+#services {
+    background: white;
+}
+.section-title {
+    font-size: 50px;
+    margin-top: 20px;
+    margin-bottom: 5%;
+}
+ul.services-content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.services-content li {
+    padding: 10px 15px;
+    margin: 0 15px;
+    flex-basis: 30%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.services-content li i {
+    font-size: 50px;
+    color:  #182fb1;
+    margin-bottom: 20px;
+}
+.services-content li h4 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.services-content li p {
+    margin: 0px;
+    text-align: left;
+}
+
+/*  about area  */
+
+ul.about-content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.about-content li {
+    padding: 20px;
+    height: 290px;
+    background-clip: content-box;
+    background-size: cover;
+    background-position: center;
+}
+.about-left {
+    flex-basis: 40%;
+    background-image: url('images/img8.jpg');
+}
+.about-right {
+    flex-basis: 60%;
+}
+.about-area p {
+    max-width: 500px;
+    margin-bottom: 35px;
+    line-height: 1.5;
+    text-align: left;
+    padding-left: 0;
+}
+.about-right h2 {
+    margin-bottom: 10px;
+}
+.about-btn {
+    padding: 15px 35px;
+    background-color: #2eb5be;
+    border-radius: 50px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+/*  contact us area    */
+
+.contact-box {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: 300px;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.contact-left {
+    flex-basis: 40%;
+    width: 100%;
+    margin: 0px;
+    padding: 30px;
+    background-color: lightblue;
+}
+.contact-right {
+    flex-basis: 60%;
+    padding: 40px;
+    background-color: white;
+    width: 100%;
+}
+.contact-left h3 {
+    font-size: 40px;
+    padding-bottom: 30px;
+}
+.contact-left table td {
+    padding-bottom: 10px;
+    font-size: 22px;
+}
+.contact-left table i {
+    padding-right: 20px;
+}
+.contact-right input {
+    padding: 8px 10px;
+    width: 150px;
+    margin: 8px 0;
+    border: none;
+    border-bottom: 1px solid black;
+}
+.contact-right form {
+    display: flex;
+}
+.contact-right .input-left {
+    flex-basis: 50%;
+}
+.contact-right .input-right {
+    flex-basis: 50%;
+}
+.contact-right button {
+    margin: 20px 0px 0px 20px;
+    font-size: 20px;
+    padding: 15px 30px;
+    border-radius: 50px;
+    color: white;
+    background-color:  #2eb5be;
+    border: none;
+}
+.contact-right input:focus {
+    outline: none;
+}
+
+/*  News and articles   */
+
+ul.news-content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.news-content li {
+    margin: 0 15px;
+    flex-basis: 30%; 
+}
+.news-content li img {
+    width: 300px;
+    height: 300px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+/*  footer area    */
+
+footer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 250px;
+    background-color: black;
+    color: white;
+    justify-content: space-between;
+}
+footer .col1, .col2, .col3, .col4 {
+    margin-top: 30px;
+}
+footer .col1 h1 {
+    font-family: pacifico;
+}
+footer h3 {
+    margin-bottom: 20px;
+}
+footer .col1 {
+    flex-basis: 30%;
+    margin-left: 30px;
+}
+footer .col1, p {
+    max-width: 80%;
+    padding-top: 10px;
+}
+footer .col1 ul {
+    display: flex;
+    width: 50%;
+}
+footer .col2 {
+    flex-basis: 20%;
+}
+footer .col2 table td {
+    padding: 10px;
+}
+footer .col3 {
+    flex-basis: 20%;
+}
+footer .col3 li {
+    padding-top: 10px;
+}
+footer .col4 {
+    flex-basis: 20%;
+    margin-right: 30px;
+}
